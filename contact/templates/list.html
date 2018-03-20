@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<div class="container">
+		<div class="panel panel-default top-margin">
+			<!-- Default panel contents -->
+			<div class="panel-heading"><h1>Howdy! This is the list of contacts!</h1></div>
+
+			<!-- Table -->
+			<table class="table">
+				<thead>
+					<th>Contact Name</th>
+					<th>Contact Email</th>
+				</thead>
+				{% for contact in all_contacts %}
+					<tr>
+						<td class="">{{ contact.name }}</td>
+						<td class="">{{ contact.email }}</td>
+					</tr>
+				{% endfor %}	
+			</table>
+		</div>
+		<a class="btn btn-success btn-lg" href="{% url 'index' %}">Back to Homepage</a>
+		<a class="btn btn-primary btn-lg" href="{% url 'add' %}">Creat a contact</a>
+	</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Contacts app in Django!</h1>
+
+			<a class="btn btn-success btn-lg" href="{% url 'list' %}">Contacts List</a>
+			<a class="btn btn-primary btn-lg" href="{% url 'add' %}">Creat a contact</a>
+		</div>
+	</div>
+{% endblock %}
