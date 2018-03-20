@@ -8,7 +8,7 @@ itsdangerous==0.24
 Jinja2==2.7.3
 MarkupSafe==0.23
 nose==1.3.7
-projectname
+projectname==0.1
 psycopg2==2.7.4
 pytz==2018.3
 requests==2.7.0
